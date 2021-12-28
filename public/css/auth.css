@@ -1,0 +1,281 @@
+/* Background */
+body {
+    background: #FFCFBF;
+}
+
+.the-container {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.c-window {
+    display: block;
+    position: relative;
+    top: 12%;
+    width: 235px;
+    height: 235px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 8px solid #FFB399;
+    background: #5ddfe8;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25) inset;
+    overflow: hidden;
+    transition: background 1s ease-in-out;
+    z-index: -1;
+}
+
+.c-window .the-sun {
+    display: block;
+    position: relative;
+    top: 18px;
+    height: 40px;
+    width: 40px;
+    background: #FFEE94;
+    border-radius: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 40px #FFEE94;
+    left: 30px;
+    transition: top .5s ease-in-out;
+}
+
+.c-window .the-cat {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    height: 140px;
+    width: 135px;
+    margin: 0 50px;
+    background: #777777;
+    transition: bottom .25s ease-in-out;
+}
+
+.c-window .the-cat:before {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 20px solid #777;
+    top: -20px;
+    left: 0;
+    position: absolute;
+    content: "";
+}
+
+.c-window .the-cat:after {
+    width: 0;
+    height: 0;
+    border-right: 0px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 20px solid #777;
+    top: -20px;
+    right: 0;
+    position: absolute;
+    content: "";
+}
+
+
+.c-window .the-cat .eyes {
+    display: block;
+    position: absolute;
+    background: #FFEE94;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    bottom: 80px;
+}
+
+.c-window .the-cat .eyes.left {
+    left: 12px;
+}
+
+.c-window .the-cat .eyes.right {
+    right: 12px;
+}
+
+.c-window .the-cat .eyes .pupil {
+    display: block;
+    position: relative;
+    background: #FFB399;
+    height: 100%;
+    width: 5px;
+    border-radius: 100%;
+    margin: 0 auto;
+    transition: width .5s ease-in-out;
+}
+
+.c-window .the-cat .nose {
+    display: block;
+    position: relative;
+    background: #FFB399;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    margin: 0 auto;
+    top: 45px;
+}
+
+/* Join Form */
+.form_container {
+    position: relative;
+    background-color: white;
+    width: 450px;
+    transform: translateY(35%);
+    min-height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.9;
+}
+.form_content {
+    transform: translate(15%, 25%);
+}
+input {
+    border: none;
+}
+input[type=text],input[type=email],input[type=password] {
+    border-bottom: 1px solid #FFB399;
+    display: block;
+    width: 60%;
+    height: 40px;
+    margin: 20px 15px;
+}
+.submitBTN {
+    cursor: pointer;
+    font-family: 'Aclonica', sans-serif;
+    display: block;
+    height: 40px;
+    margin: 30px 15px;
+    width: 60%;
+    background-color: #FFEE94;
+    border: 2px solid #FFEE94;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #333;
+    padding: 6px 10px 10px 10px;
+    transition: 0.3s all;
+
+}
+.submitBTN:hover {
+    border: 1px solid #FFB399;
+    background-color: white;
+}
+.alert {
+    margin-bottom: -55px;
+    border: 1px solid red;
+    width: 70%;
+    padding: 10px;
+    transform: translate(15%, 28%);
+}
+.alert li {
+    list-style: none;
+    color: red;
+}
+
+.back {
+    top: 3%;
+    font-weight: bold;
+    right: 3%;
+    padding: 5px 10px;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    background-color: #FFCFBF;
+    transition: 0.2s all;
+}
+.back:hover {
+     opacity: 0.8;
+}
+
+.hr {
+    width: 400px;
+    transform: translateX(-16%);
+}
+
+.social_login {
+    background-color: #FFCFBF;
+    margin-top: 30px;
+    width: 280px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #FFCFBF;
+    transition: 0.3s all;
+}
+
+.social_login:hover {
+    border: 1px solid #FFCFBF;
+    background-color: white;
+}
+
+.github {
+    font-family: 'Aclonica', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    
+}
+
+/* logo */
+.logo {
+    font-family: 'Lobster', cursive;
+    background-color: #FFEE94;
+    box-shadow: 0px 0px 20px #FFEE94;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+
+/* Links */
+.links {
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.sign_up {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 40px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    color: #FFB399;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 10px 10px 10px #FFB399;
+
+}
+
+.sign_up:hover {
+    background-color: #FFCFBF;
+    color: white;
+    border: 2px solid white;
+}
+
+.login {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 40px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    color: #FFB399;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 10px 10px 10px #FFB399;
+}
+
+.login:hover {
+    background-color: #FFCFBF;
+    color: white;
+    border: 2px solid white;
+}
